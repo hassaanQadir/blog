@@ -1,13 +1,13 @@
 # My Summer '24 SWE Internship Outline
 
-* **[Myself](https://github.com/hassaanQadir/summer24sweintern/edit/main/README.md#myself)**
+* **[Myself](https://github.com/hassaanQadir/summer24sweintern/blob/main/README.md#myself)**
     * Intro
     * About Me
-* **[Outline of the Process](https://github.com/hassaanQadir/summer24sweintern/edit/main/README.md#outline)**
+* **[Outline of the Process](https://github.com/hassaanQadir/summer24sweintern/blob/main/README.md#outline)**
     * Get an Interview
     * Technical Interview
     * Behaviorial Interview
-* **[List of Companies I’m looking Into](https://github.com/hassaanQadir/summer24sweintern/edit/main/README.md#companies)**
+* **[List of Companies I’m looking Into](https://github.com/hassaanQadir/summer24sweintern/blob/main/README.md#companies)**
 
 ## [Myself](#myself)
 

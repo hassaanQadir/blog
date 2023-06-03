@@ -38,7 +38,7 @@ I made this outline of the process largely by digesting the [Tech Interview Hand
             * Apply Early
             * Check the [Pitt CSC Github Repo](https://github.com/pittcsc/Summer2023-Internships)
         * My Projects
-            * [Onlinechargemaster.com](onlinechargemaster.com) — [Github](https://github.com/hassaanQadir/chargemaster)
+            * [Onlinechargemaster.com](onlinechargemaster.com) ([Github](https://github.com/hassaanQadir/chargemaster))
             * [Pandemic Patient Prognosis Java App](https://play.google.com/store/apps/details?id=com.Yarrow_Software.covid_19prognosisapp)
             * Molbio.ai (future project w/ post coming)
             * Biotech Visualizer (future project w/post coming)

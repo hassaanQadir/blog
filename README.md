@@ -21,16 +21,15 @@ I’m a rising junior CS major at Yale with a 3.80 GPA.
 
 In terms of work experience, I spent my first summer (2022) doing primarily wet-lab research for the Yale International Genetically Engineered Machines (iGEM) team, although I did some computational stuff, too. In my second summer (2023), I was/am a Computational Biology Intern at Avalo, helping engineer their bioinformatics pipeline and analyzing a bunch (hundreds) of rice genomes they need to work with.
 
-In terms of projects, I made onlinechargemaster.com. This website goes through a bunch (hundreds) of .CSVs provided by California and uses that to create a dashboard where users can input a location & search for a medical procedure and receive a list of hospitals near them, ranked by price. Github link.
+In terms of projects, I made [onlinechargemaster.com](onlinechargemaster.com). This website goes through a bunch (hundreds) of .CSVs provided by California and uses that to create a dashboard where users can input a location & search for a medical procedure and receive a list of hospitals near them, ranked by price. [Github link](https://github.com/hassaanQadir/chargemaster).
 
-I also made the Pandemic Patient Prognosis app on Google Play Store, which will take the user’s underlying conditions and output a COVID-19 mortality risk based on early 2020 data. I made this before I understood Github.
+I also made the [Pandemic Patient Prognosis](https://play.google.com/store/apps/details?id=com.Yarrow_Software.covid_19prognosisapp) app on Google Play Store, which will take the user’s underlying conditions and output a COVID-19 mortality risk based on early 2020 data. I made this before I understood Github.
 
 I’ve been doing some leetcode here and there, and am an above-median student in my classes, although I’m easily distracted by my extracurricular pursuits. This summer 2023, I’ll be grinding inshallah.
 
 ## [Outline](#outline)
 
 I made this outline of the process largely by digesting the [Tech Interview Handbook](techinterviewhandbook.org). Super great website, but it can get overwhelming, so this outline is essential for me.
-
 
 * **Get an interview**
     * Resume

@@ -2,6 +2,7 @@
 I want to get a good software engineering internship next year, with the aim of a return offer after that. My priority is to find a position that'll give me credibility for the future, expose me to new developments in the industry, and net me a good income.
 
 ## The outline
+I wrote an in-depth outline which I spun off into its own .md here.
 
 ## What am I actually doing
 That's what I should be doing. In terms of what I'm actually doing, I'm about a week behind on leetcode, but the projects and applications are going well overall. I also need to grind and get referrals.

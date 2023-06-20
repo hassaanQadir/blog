@@ -25,6 +25,8 @@ In terms of projects, I made [onlinechargemaster.com](https://www.onlinechargema
 
 I also made the [Pandemic Patient Prognosis](https://play.google.com/store/apps/details?id=com.Yarrow_Software.covid_19prognosisapp) app on Google Play Store, which will take the user’s underlying conditions and output a COVID-19 mortality risk based on early 2020 data. I made this before I understood Github.
 
+Most recently, I made [molbio.ai](molbio.ai), a multi-LLM Agent which takes in a bio research project, e.g. “Create E. coli which makes insulin,” divides it into discrete experiments, and programs a lab robot to perform all of the experiments. [Github link](https://github.com/hassaanQadir/molbio-ai).
+
 I’ve been doing some leetcode here and there, and am an above-median student in my classes, although I’m easily distracted by my extracurricular pursuits. This summer 2023, I’ll be grinding inshallah.
 
 ## [Outline](#outline)

@@ -4,8 +4,9 @@
 import requests  # requests module for making HTTP requests
 import re  # re module for using regular expressions
 
-# This function takes a url to a markdown file and a list of names, and returns a list of table rows where any of the names appear.
-def check_names_in_md_file(url, names):
+# This function takes a url to a markdown file and a list of names and a list of names for exact matching, 
+# and returns a list of table rows where any of the names appear.
+def check_names_in_md_file(url, names, exactNames):
     # Make a GET request to the provided URL
     response = requests.get(url)
     # Get the text content from the response
@@ -35,13 +36,21 @@ def check_names_in_md_file(url, names):
                 # If the listed name is found within the name in the row (ignoring case), add the row to the list of found rows
                 if listed_name.lower() in name.group(1).lower():
                     found_rows.append(row)
+    
+    # does the exact same thing as above but only returns rows if there is an exact match for the name
+    for row in rows:
+        name = re.search(r'\|\s(.+?)\s\|', row)
+        if name:
+            for listed_name in exactNames:
+                if re.search(r'^\b' + re.escape(listed_name.lower()) + r'\b$', name.group(1).lower()):
+                    found_rows.append(row)
 
     # Return the list of found rows
     return found_rows
 
 # List of names to search for in the markdown table
 names = [
-    "LinkedIn", "Meta", "Google", "Alphabet", "Apple", "Amazon", "Microsoft", "Nvidia", "Airbnb", 
+    "Meta", "Google", "Alphabet", "Apple", "Amazon", "Microsoft", "Nvidia", "Airbnb", 
     "Stripe", "Pinterest", "Facebook", "Lyft", "DoorDash", "Box", "Twitter", "Dropbox", "Tesla", 
     "Salesforce", "Palantir", "Asana", "Uber", "Robinhood", "Roblox", "Databricks", "Plaid", "Coinbase", 
     "Atlassian", "Quora", "Cruise", "Waymo", "Two Sigma", "Instabase", "Twitch", "Wish", "Rippling", 
@@ -49,11 +58,14 @@ names = [
     "Genentech", "Schrodinger", "Discord", "Slack", "Snap", "Yelp"
 ] 
 
+# List of names to search for in the markdown table but only matching on exact matches
+exactNames = ["LinkedIn"]
+
 # URL of the markdown file to check
 url = "https://raw.githubusercontent.com/pittcsc/Summer2024-Internships/dev/README.md"
 
-# Call the function with the provided URL and list of names
-found_rows = check_names_in_md_file(url, names)
+# Call the function with the provided URL and list of names and list of names for exact matching
+found_rows = check_names_in_md_file(url, names, exactNames)
 
 # If any rows were found, print them. Otherwise, print a message indicating that no names were found.
 if found_rows:

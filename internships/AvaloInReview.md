@@ -25,12 +25,15 @@ Of course, the technology itself was very interesting, and the team members enth
 
 My work ended up breaking into about three projects, one for each month.
 
+### Project 1
 The first project had to do with adding steps to the primary data pipeline of Avalo Inc. Avalo’s primary focus is taking in genetic data, running them through the functions of open source and proprietary bioinformatics libraries, and using the information to make plant breeding decisions. I personally dealt with two open source libraries, Sarek, which aligns variant calls with a reference genome, and VCFtools, which manipulates Variant Call Format files. 
 
 Briefly, variant calls store mutation information about a particular genetic sequence accession. Old-school methods would store the entire experimentally-derived genetic sequence, i.e. aaccggtctcaa, and then we could compare that to the reference genome, i.e. aagcggtctcaa. Here we can easily see there’s a mutation in the third nucleotide, G to C. But if all we care about is mutations, then most of those letters are not relevant to us, and this issue exponentially increases when we’re dealing with millions of bases, only a few thousand of which might be meaningfully mutated. Variant calls tell us what sites are mutated and let us assume the rest matches the reference genome. It’s much more complicated than I just let on, and these libraries deal with really complex math, so I spent a while learning about these libraries and testing various functions until I finally got them to do what I wanted.
 
+### Project 2
 The second month was focused on understanding and working with the Nextflow software which coordinates the entire Avalo data pipeline. Nextflow is a Java-based scripting language built to automate the process of running huge data sets through multiple bioinformatics tools. Avalo works with thousands of plant genomes, which is the same throughput as hundreds of millions of bacteria genomes, so they need a robust scheduling and channeling system. Nextflow, running on AWS servers and in Docker containers, provides that, and I learned a lot about it all through the process of adding my two new bioinformatics steps into the Nextflow pipeline. The AWS and Docker familiarity will definitely transfer over to wherever I go, and a lot of the logic behind Nextflow is common to any high-throughput handler.
 
+### Project 3
 My final project was working with a rice genome-wide association study (GWAS) conducted by Groen et al. 2020. GWAS matches the genome of a plant to its phenotype, so we can say that XYZ genotype correlates with a more drought-resistant plant, which is what I was researching. I used the data to develop a model which allows us to sequence rice seeds and predict approximately how many grains of rice the resulting plant would yield in various conditions. Useful stuff!
 
 ## Differences between school and internship

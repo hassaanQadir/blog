@@ -49,6 +49,6 @@ It’s barely an MVP because it’s barely useful.
 I’ll put in a few more days of work smoothing out some kinks and spreading the word, but if I don’t get any demonstrated interest, I’m going to switch to something else because I think most of the low-hanging fruit here has already been plucked by OpenTrons themselves, good for them.
 ### Starting work on the askNCBI MVP
 
-Basically make an LLM agent that can interact with the NCBI API super easily. Users should be able to say, “Give me the gene sequences and amino acid sequences of dihydrodaidzein for every bacteria species it is found in,” and they should just get what they want.
+Basically make an LLM agent that can interact with the NCBI API super easily. Users should be able to say, “Give me the gene sequences and amino acid sequences of dihydrodaidzein for every bacteria species it is found in,” and they should just get what they want. These are nodes on the left side of the tree.
 
 Given that NCBI has an API publicly available, this looks like low-hanging fruit. Idk how good the API is though. It could be super great or catastrophically bad.

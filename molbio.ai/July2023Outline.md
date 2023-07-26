@@ -8,6 +8,7 @@ Tomorrow’s undergrads will do the work of today’s PhDs, tomorrow’s PhDs wi
 
 But the main thesis is that current technology, current LLMs and modeling and lab automation, is technically sufficient for >80% of all lab-work, and it’s only a question of putting 2 and 2 together to make 4. How do we get there?
 ### The tree
+![image](https://github.com/hassaanQadir/blog/assets/86531769/f014df8e-804b-49d7-81b2-4a99144f29bf)
 
 I visualize this field as a tree opening downwards. The root is the title of the research project. It’s children are phases, who have children and so on until it’s broken down into specific movements. Go to NCBI, look up _BRCA2_… fill the pipette, shake the well, etc.
 

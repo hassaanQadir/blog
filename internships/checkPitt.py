@@ -62,7 +62,7 @@ names = [
 exactNames = ["LinkedIn"]
 
 # URL of the markdown file to check
-url = "https://raw.githubusercontent.com/pittcsc/Summer2024-Internships/dev/README.md"
+url = "https://github.com/SimplifyJobs/Summer2024-Internships/blob/dev/README.md"
 
 # Call the function with the provided URL and list of names and list of names for exact matching
 found_rows = check_names_in_md_file(url, names, exactNames)

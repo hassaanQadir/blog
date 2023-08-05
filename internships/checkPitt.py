@@ -10,10 +10,10 @@ def check_names_in_md_file(url, names, exactNames):
     # Make a GET request to the provided URL
     response = requests.get(url)
     # Get the text content from the response
-    raw_md = response.text
-
-    # Use a regular expression to search for a markdown table in the text. A markdown table starts with a header row and at least one row of data.
-    table = re.search(r'\| Name \| Location \| Notes \|\n\| ---- \| -------- \| ----- \|\n((?:\|.+\|\n)+)', raw_md)
+    content = response.text
+    
+    # Use a regular expression to search for a markdown table in the content
+    table = re.search(r'\| Company \| Role \| Location \| Application/Link \| Date Posted \|\n\| --- \| --- \| --- \| :---: \| :---: \|\n((?:\|.+\|\n)+)', content)
 
     # If no table is found, return an empty list
     if not table:
@@ -26,20 +26,18 @@ def check_names_in_md_file(url, names, exactNames):
 
     found_rows = []  # Initialize the list of found rows
 
-    # Iterate over the rows
+   # Iterate over the rows
     for row in rows:
-        # Extract the name from each row
-        name = re.search(r'\|\s(.+?)\s\|', row)
-        # If a name is found, compare it to the list of names
-        if name:
-            for listed_name in names:
-                # If the listed name is found within the name in the row (ignoring case), add the row to the list of found rows
-                if listed_name.lower() in name.group(1).lower():
-                    found_rows.append(row)
+        for listed_name in names:
+            # If the listed name is found within the row (ignoring case), add the row to the list of found rows
+            if listed_name.lower() in row.lower():
+                found_rows.append(row)
+                break  # Break out of the inner loop once a match is found for this row
+    
     
     # does the exact same thing as above but only returns rows if there is an exact match for the name
     for row in rows:
-        name = re.search(r'\|\s(.+?)\s\|', row)
+        name = re.search(r'\|\s\*\*\[(.+?)\]\(', row)
         if name:
             for listed_name in exactNames:
                 if re.search(r'^\b' + re.escape(listed_name.lower()) + r'\b$', name.group(1).lower()):
@@ -62,7 +60,7 @@ names = [
 exactNames = ["LinkedIn"]
 
 # URL of the markdown file to check
-url = "https://github.com/SimplifyJobs/Summer2024-Internships/blob/dev/README.md"
+url = "https://raw.githubusercontent.com/SimplifyJobs/Summer2024-Internships/dev/README.md"
 
 # Call the function with the provided URL and list of names and list of names for exact matching
 found_rows = check_names_in_md_file(url, names, exactNames)
